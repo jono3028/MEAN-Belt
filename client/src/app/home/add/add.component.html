@@ -1,0 +1,14 @@
+<a [routerLink]="['/']">Home</a>
+<h1>New Question</h1>
+<form (submit)="submitNewQuestion()">
+  <label for="question">Question: </label>
+  <textarea [(ngModel)]="newQuestion.question" name="question"></textarea>
+  <label for="answer">Correct Answer: </label>
+  <input type="text" [(ngModel)]="newQuestion.answer" name="answer">
+  <label for="fake1">Fake Answer 1: </label>
+  <input type="text" [(ngModel)]="newQuestion.fake1" name="fake1">
+  <label for="fake2">Fake Answer 2: </label>
+  <input type="text" [(ngModel)]="newQuestion.fake2" name="fake2">
+  <button (click)="cancelQuestion()">Cancel</button>
+  <input type="submit" value="submit">
+</form>

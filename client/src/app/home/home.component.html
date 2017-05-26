@@ -1,0 +1,4 @@
+Home | <a [routerLink]="['/addnew']">Add Question</a> | <button (click)="logout()">Logout</button>
+<app-user *ngIf="!username"></app-user>
+<app-pregame *ngIf="username"></app-pregame>
+<app-scoreboard></app-scoreboard>

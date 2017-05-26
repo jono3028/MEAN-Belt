@@ -1,0 +1,16 @@
+<table>
+  <head>
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+      <th>Percentage</th>
+    </tr>
+  </head>
+  <tbody>
+    <tr *ngFor="let user of games">
+      <td>{{user.name}}</td>
+      <td>{{user.score}}/3</td>
+      <td>{{user.percent | percent : '2.0-0'}}</td>
+   </tr>
+  </tbody>
+</table>

@@ -1,0 +1,11 @@
+<h4>Hello!</h4>
+<p>Please enter your name to to play!</p>
+<form (submit)='login()' #formData='ngForm'>
+<label for="username">User Name: </label>
+<input type="text"
+  [(ngModel)]='username'
+  name='username'
+  minlength="1"
+  required>  
+<input type="submit" value="Go Play!">
+</form>

@@ -1,0 +1,24 @@
+<h4>Hi user!</h4>
+<p>Choose and answer for each of the questions and submit the quiz once done, Good Luck!</p>
+<form (submit)="submitGame()" >
+  <div>
+    {{quiz[0].question}}
+    <input type="radio" value="{{quiz[0].answer}}" [(ngModel)]="answers[0]" name="quiz[0]._id">{{quiz[0].answer}}
+    <input type="radio" value="{{quiz[0].fake1}}" [(ngModel)]="answers[0]" name="quiz[0]._id">{{quiz[0].fake1}}
+    <input type="radio" value="{{quiz[0].fake2}}" [(ngModel)]="answers[0]" name="quiz[0]._id">{{quiz[0].fake2}}
+  </div>
+  <div>
+    {{quiz[1].question}}
+    <input type="radio" value="{{quiz[1].answer}}" [(ngModel)]="answers[1]" name="quiz[1]._id">{{quiz[1].answer}}
+    <input type="radio" value="{{quiz[1].fake1}}" [(ngModel)]="answers[1]" name="quiz[1]._id">{{quiz[1].fake1}}
+    <input type="radio" value="{{quiz[1].fake2}}" [(ngModel)]="answers[1]" name="quiz[1]._id">{{quiz[1].fake2}}
+  </div>
+  <div>
+    {{quiz[2].question}}
+    <input type="radio" value="{{quiz[2].answer}}" [(ngModel)]="answers[2]" name="quiz[2]._id">{{quiz[2].answer}}
+    <input type="radio" value="{{quiz[2].fake1}}" [(ngModel)]="answers[2]" name="quiz[2]._id">{{quiz[2].fake1}}
+    <input type="radio" value="{{quiz[2].fake2}}" [(ngModel)]="answers[2]" name="quiz[2]._id">{{quiz[2].fake2}}
+  </div>
+  <button (click)="cancelGame()">Cancel</button>
+  <input type="submit" value="Submit">
+</form> 
